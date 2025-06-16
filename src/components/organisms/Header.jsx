@@ -26,7 +26,7 @@ const Header = ({ onToggleMobileMenu }) => {
                 <ApperIcon name="CheckSquare" size={18} className="text-white" />
               </div>
               <h1 className="font-display font-bold text-xl text-gray-900 hidden sm:block">
-                TaskFlow Pro plus
+                TaskFlow Pro +
               </h1>
             </div>
           </div>
