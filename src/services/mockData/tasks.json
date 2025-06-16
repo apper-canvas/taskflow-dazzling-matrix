@@ -1,0 +1,72 @@
+[
+  {
+    "Id": 1,
+    "title": "Review quarterly marketing campaign performance metrics",
+    "completed": false,
+    "priority": "high",
+    "dueDate": "2024-01-15T09:00:00.000Z",
+    "listId": "work",
+    "createdAt": "2024-01-10T08:30:00.000Z",
+    "order": 0
+  },
+  {
+    "Id": 2,
+    "title": "Prepare presentation for client meeting on project deliverables",
+    "completed": false,
+    "priority": "high",
+    "dueDate": "2024-01-14T14:00:00.000Z",
+    "listId": "work",
+    "createdAt": "2024-01-10T10:15:00.000Z",
+    "order": 1
+  },
+  {
+    "Id": 3,
+    "title": "Schedule dentist appointment for routine cleaning",
+    "completed": true,
+    "priority": "medium",
+    "dueDate": null,
+    "listId": "personal",
+    "createdAt": "2024-01-09T16:20:00.000Z",
+    "order": 0
+  },
+  {
+    "Id": 4,
+    "title": "Research and compare health insurance plans for family",
+    "completed": false,
+    "priority": "medium",
+    "dueDate": "2024-01-20T00:00:00.000Z",
+    "listId": "personal",
+    "createdAt": "2024-01-08T19:45:00.000Z",
+    "order": 1
+  },
+  {
+    "Id": 5,
+    "title": "Order birthday gift for mom's surprise party next week",
+    "completed": false,
+    "priority": "high",
+    "dueDate": "2024-01-16T12:00:00.000Z",
+    "listId": "personal",
+    "createdAt": "2024-01-07T14:30:00.000Z",
+    "order": 2
+  },
+  {
+    "Id": 6,
+    "title": "Update portfolio website with recent project case studies",
+    "completed": false,
+    "priority": "low",
+    "dueDate": "2024-01-25T00:00:00.000Z",
+    "listId": "work",
+    "createdAt": "2024-01-06T11:00:00.000Z",
+    "order": 2
+  },
+  {
+    "Id": 7,
+    "title": "Clean out garage and organize storage boxes",
+    "completed": false,
+    "priority": "low",
+    "dueDate": null,
+    "listId": "home",
+    "createdAt": "2024-01-05T09:15:00.000Z",
+    "order": 0
+  }
+]
