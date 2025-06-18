@@ -1,10 +1,14 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { motion } from 'framer-motion';
+import { useSelector } from 'react-redux';
 import ApperIcon from '@/components/ApperIcon';
 import QuickAddModal from '@/components/organisms/QuickAddModal';
+import { AuthContext } from '@/App';
 
 const Header = ({ onToggleMobileMenu }) => {
   const [showQuickAdd, setShowQuickAdd] = useState(false);
+  const { logout } = useContext(AuthContext);
+  const { user, isAuthenticated } = useSelector((state) => state.user);
 
   return (
     <>
@@ -31,8 +35,15 @@ const Header = ({ onToggleMobileMenu }) => {
             </div>
           </div>
 
-          {/* Right side */}
+{/* Right side */}
           <div className="flex items-center space-x-3">
+            {/* User info */}
+            {isAuthenticated && user && (
+              <div className="hidden md:flex items-center space-x-2 text-sm text-gray-600">
+                <span>Welcome, {user.firstName || user.emailAddress}</span>
+              </div>
+            )}
+            
             {/* Quick add button */}
             <motion.button
               whileHover={{ scale: 1.05 }}
@@ -43,6 +54,19 @@ const Header = ({ onToggleMobileMenu }) => {
               <ApperIcon name="Plus" size={16} />
               <span className="hidden sm:inline">Quick Add</span>
             </motion.button>
+            
+            {/* Logout button */}
+            {isAuthenticated && (
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={logout}
+                className="bg-gray-100 text-gray-700 px-4 py-2 rounded-lg font-medium flex items-center space-x-2 hover:bg-gray-200 transition-all shadow-sm"
+              >
+                <ApperIcon name="LogOut" size={16} />
+                <span className="hidden sm:inline">Logout</span>
+              </motion.button>
+            )}
           </div>
         </div>
       </header>
