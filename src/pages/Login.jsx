@@ -23,7 +23,7 @@ function Login() {
           </div>
           <div className="flex flex-col gap-1 items-center justify-center">
             <div className="text-center text-lg xl:text-xl font-bold">
-              Sign in to TaskFlow Pro 1
+              Sign in to TaskFlow Pro 2
             </div>
             <div className="text-center text-sm text-gray-500">
               Welcome back, please sign in to continue
